@@ -2,7 +2,8 @@
 
 A responsive personal portfolio website built as **Task 1: Personal Developer Portfolio & Project Showcase** for the Datheon internship program.
 
-🔗 **Live Demo:** [https://sehar51214.github.io/portfolio/](https://sehar51214.github.io/portfolio/)
+🔗 **Live Demo:** 
+http://seharbatoolportfolio.netlify.app
 
 ---
 
