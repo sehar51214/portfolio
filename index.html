@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sehar Batool - Android developer and Computer Science student building AI-powered mobile apps.">
+  <title>Sehar Batool | Android Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">SEHAR BATOOL</a>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">☀️</button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-tag">Hi, I'm</p>
+        <h1 class="hero-name">
+          <span id="typed-name" class="gradient-text"></span><span class="cursor" id="name-cursor">|</span>
+        </h1>
+        <p class="hero-role">
+          <span id="typed-role"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-sub">Building AI-powered Android apps with Kotlin, Jetpack Compose and on-device LLMs.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          Final-year Computer Science student (CGPA 3.98/4.00) building Android apps with
+          Kotlin and Jetpack Compose. Experienced in adding AI features to mobile apps, including
+          text extraction, voice input and fully offline language model inference. Also experienced
+          in full-stack development with React Native and .NET Core.
+        </p>
+        <p class="about-text">Based in Muzaffarabad, AJK, Pakistan.</p>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section-alt reveal">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">Kotlin</div>
+          <div class="skill-card">Jetpack Compose</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">React Native</div>
+          <div class="skill-card">Room (SQLite)</div>
+          <div class="skill-card">.NET Core</div>
+          <div class="skill-card">HTML5</div>
+          <div class="skill-card">CSS3</div>
+          <div class="skill-card">MongoDB / SQL</div>
+          <div class="skill-card">LLM Fine-Tuning</div>
+          <div class="skill-card">Machine Learning</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">Git &amp; GitHub</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <h3>Urdu LLM: Offline Android App</h3>
+            <p>Final year project: fine-tuned Llama 3.2 3B for Urdu and deployed it in a 100% offline Android app.</p>
+            <div class="tags">
+              <span>Llama 3.2</span><span>LoRA</span><span>llama.cpp</span><span>Android</span>
+            </div>
+            <button class="btn btn-small project-btn"
+              data-title="Urdu LLM: Fine-Tuning and Offline Android App"
+              data-desc="Built a 94,325-sample Urdu dataset from multiple Hugging Face sources. Fine-tuned Llama 3.2 3B with LoRA (r=32) on Kaggle T4 GPUs, reducing training loss from 2.01 to 0.92 (about 54%). Converted the model to GGUF and quantized it to Q4_K_M (1.88 GB). Built an Android app with 100% offline inference using llama.cpp, including login, signup, chat and history."
+              data-link="https://www.linkedin.com/in/syeda-sehar-naqvi-ba25953a1">
+              View Details
+            </button>
+          </article>
+
+          <article class="project-card">
+            <h3>Pixel Word</h3>
+            <p>Image text extractor that pulls English text from camera or gallery photos.</p>
+            <div class="tags"><span>Kotlin</span><span>ML Kit</span></div>
+            <button class="btn btn-small project-btn"
+              data-title="Pixel Word: Image Text Extractor"
+              data-desc="Extracts English text from camera or gallery images, with word count and text statistics. Built with Kotlin and ML Kit."
+              data-link="https://www.linkedin.com/in/syeda-sehar-naqvi-ba25953a1">
+              View Details
+            </button>
+          </article>
+
+          <article class="project-card">
+            <h3>Quick Notes</h3>
+            <p>Notes app to add, edit and delete notes, with offline storage and voice-to-text input.</p>
+            <div class="tags"><span>Kotlin</span><span>Room DB</span></div>
+            <button class="btn btn-small project-btn"
+              data-title="Quick Notes"
+              data-desc="Notes app to add, edit and delete notes. Uses Room database for offline storage and supports voice-to-text input."
+              data-link="https://www.linkedin.com/in/syeda-sehar-naqvi-ba25953a1">
+              View Details
+            </button>
+          </article>
+
+          <article class="project-card">
+            <h3>SkyCast Weather App</h3>
+            <p>Shows live weather for any city, including temperature, humidity and conditions.</p>
+            <div class="tags"><span>Kotlin</span><span>REST API</span></div>
+            <button class="btn btn-small project-btn"
+              data-title="SkyCast: Weather App"
+              data-desc="Shows live weather for any city, including temperature, humidity and current conditions, fetched from a REST API."
+              data-link="https://www.linkedin.com/in/syeda-sehar-naqvi-ba25953a1">
+              View Details
+            </button>
+          </article>
+
+          <article class="project-card">
+            <h3>E-Commerce Shopping App</h3>
+            <p>Product listings, cart and user authentication, backed by RESTful APIs.</p>
+            <div class="tags"><span>React Native</span><span>.NET Core</span></div>
+            <button class="btn btn-small project-btn"
+              data-title="E-Commerce Shopping App"
+              data-desc="Mobile shopping app with product listings, cart and user authentication. Built with React Native on the frontend and .NET Core RESTful APIs on the backend."
+              data-link="https://www.linkedin.com/in/syeda-sehar-naqvi-ba25953a1">
+              View Details
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & ACHIEVEMENTS ===== -->
+    <section id="education" class="section section-alt reveal">
+      <div class="container">
+        <h2 class="section-title">Education &amp; Achievements</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <h3>BSCS, Computer Science</h3>
+            <p><strong>University of Azad Jammu and Kashmir</strong>, Jhelum Valley Campus (2022 – 2026)</p>
+            <div class="tags"><span>CGPA 3.98 / 4.00</span></div>
+          </article>
+
+          <article class="project-card">
+            <h3>Intermediate (ICS)</h3>
+            <p><strong>Read Foundation Science College</strong>, Chinari (2020 – 2022)</p>
+          </article>
+
+          <article class="project-card">
+            <h3>Achievements</h3>
+            <p>Scored 93% percentile in the National Skill Competency Test 2026.</p>
+            <p>Completed a Full-Stack App Development Bootcamp (React Native and .NET Core).</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-text">Open to internships, freelance work and collaboration. Feel free to reach out.</p>
+        <div class="contact-links">
+          <a href="mailto:syedaseharnaqvi512@gmail.com" class="btn btn-primary">Email Me</a>
+          <a href="https://www.linkedin.com/in/syeda-sehar-naqvi-ba25953a1" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Sehar Batool. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn btn-primary">View More</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
